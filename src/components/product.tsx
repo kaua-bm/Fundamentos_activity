@@ -43,3 +43,31 @@ export default function Product({ name, completed, onToggle, onRemove }: Product
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  card: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#F9FAFB",
+    borderRadius: 6,
+    padding: 12,
+    marginHorizontal: 16,
+    marginVertical: 6,
+    borderWidth: 1,
+    borderColor: "#E5E7EB",
+  },
+  checkbox: {
+    marginRight: 12,
+  },
+  name: {
+    flex: 1,
+    fontSize: 16,
+    color: "#111827",
+  },
+  trash: {
+    width: 12.478,          
+    height: 14,         
+    tintColor: "#333",
+  },
+});
+
