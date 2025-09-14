@@ -1,27 +1,23 @@
-import { useState } from "react"
-import { FlatList, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View, Alert } from "react-native"
-import { Product } from "../components/product"
-import { style } from "./styles";
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  FlatList,
+  Image,
+} from "react-native";
+import { styles } from "./styles";
+import Product from "/Users/kauabarcelosdemorais/desenvolvimento/atividade01/atividade01/src/components/product";
 
+export default function Home() {
+  const [products, setProducts] = useState<string[]>([]);
+  const [completed, setCompleted] = useState<string[]>([]);
+  const [newProduct, setNewProduct] = useState("");
 
-export function Home() {
-function addProduct(name: String){}
-
-    return (
-    <View style={style.container}>
-        <View style={style.purpleContainer}>
-            <Text style={style.title}>Lista de Compras</Text>
-        </View>
-
-        <View style={style.input}>
-            <Text style={style.title}>Adicione um novo produto</Text>
-        </View>
-
-        <TouchableOpacity style={style.trash} onPress={addProduct}>
-          <Text style={style.trash}>+</Text>
-        </TouchableOpacity>
-    </View>
-  )
-  
+  function handleAddProduct() {
+    if (newProduct.trim().length === 0) return;
+    setProducts((prev) => [...prev, newProduct]);
+    setNewProduct("");
+  }
 }
-

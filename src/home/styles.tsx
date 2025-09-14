@@ -1,45 +1,45 @@
-import { useState } from "react"
-import { FlatList, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native"
-import { Product } from "../components/product"
+import { StyleSheet } from "react-native";
 
-
-
-export const style = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
-    backgroundColor:"#F2F2F2",
-    width: 393,
-    height: 852,
     flex: 1,
+    backgroundColor: "#fff",
   },
-  purpleContainer: {
-    width: 393,
-    height: 173,
-    backgroundColor:"#7A4A9E",
-    justifyContent:"center",
-    alignItems:"center",
+  header: {
+    backgroundColor: "#7A4A9E", 
+    paddingTop: 90,
+    paddingBottom: 80,
+    alignItems: "center",
   },
-  title: {
-    color: "#F2F2F2",
-    fontSize:18,
+  headerTitle: {
+    color: "#fff",
+    fontSize: 20,
     fontWeight: "bold",
-    lineHeight:25.2,
+  },
+  form: {
+    flexDirection: "row",
+    marginTop: -25,
+    marginHorizontal: 16,
   },
   input: {
-    flex:1,
+    flex: 1,
     backgroundColor: "#fff",
-    padding:16,
-    alignItems:"center",
-    borderRadius: 5,
-    borderColor: "#808080"
+    borderRadius: 6,
+    padding: 12,
+    borderWidth: 1,
+    borderColor: "#ccc",
+    fontSize: 16,
   },
-  trash:{
-    width: 56,
-    height: 56,
-    borderRadius: 5,
+  button: {
+    marginLeft: 8,
     backgroundColor: "#31C667",
+    borderRadius: 6,
+    justifyContent: "center",
     alignItems: "center",
-    justifyContent: "center"
-  }
-
-
-})
+    paddingHorizontal: 16,
+  },
+  buttonText: {
+    fontSize: 20,
+    color: "#fff",
+  },
+});
