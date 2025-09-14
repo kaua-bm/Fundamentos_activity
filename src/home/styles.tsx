@@ -42,4 +42,43 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     color: "#fff",
   },
+  tabs: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: 20,
+    marginHorizontal: 16,
+    borderBottomWidth: 1,
+    borderColor: "#E5E5E5",
+    paddingBottom: 8,
+  },
+  tab: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#4B5563",
+  },
+  counter: {
+    color: "#6B7280",
+  },
+  emptyContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 20,
+  },
+  emptyImage: {
+    width: 64,
+    height: 64,
+    marginBottom: 16,
+  },
+  emptyText: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#333",
+    textAlign: "center",
+  },
+  emptySubText: {
+    fontSize: 14,
+    color: "#666",
+    textAlign: "center",
+  },
 });
